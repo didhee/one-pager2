@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>one pager repo</title>
+
+   <style>
+      body {
+         background-color: #F3F2EF;
+         font-family: 'Segoe UI', sans-serif;
+         margin: 0;
+      }
+
+      a {
+         text-decoration: none;
+         color: #0A66C2;
+      }
+
+      nav a {
+         border: 1px solid #0A66C2;
+         padding: 8px 12px;
+         border-radius: 10px;
+      }
+
+      .card-details a {
+         font-size: 12px;
+      }
+
+      .deets8 .subtitle, .deets4 .subtitle, .deets5 .subtitle   {
+         margin-bottom: 32px;
+      }
+
+      .btn-demo {
+         color: #ffffff;
+         background-color: #0A66C2;
+         margin-left: 20px;
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 15px 135px;
+         background-color: #ffffff;
+         position: sticky;
+	      top: 0;
+	      z-index: 100;
+	      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      } 
+      
+      .logo {
+         width: 18%;
+         display: flex;
+         justify-content: space-between;
+      } 
+
+      nav img {
+         width: 80px;
+      }
+
+      section {
+         width: 80%;
+         margin: 60px auto;
+      }
+
+      .section-title {
+         font-size: 22px;
+         font-weight: 500;
+      }
+
+      .grid-wrapper {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(350px, 1fr));
+         gap: 30px;
+      }
+
+      .card {
+         background-color: #ffffff;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+         border-radius: 10px;
+         padding: 20px 30px;
+      }
+
+      .title {
+         text-transform: uppercase;
+         font-size: 12px;
+      }
+     
+      .subtitle {
+         font-size: 14px;
+         line-height: 22px;
+      }
+
+      .card-img {
+         width: 25%;
+         /* height: 30%; */
+      }
+
+      .card-img img {
+         width: 100%;
+         /* height: 100%; */
+      }
+
+      .card-details {
+         margin-top: 10px;
+         width: 100%;
+      }
+
+      .deets1, .deets3, .deets5, .deets4 {
+         padding-top: 20px;
+      }
+
+      .deets2 {
+         padding-top: 13px;
+      }
+
+      /* .deets4 {
+         padding-top: 18px;
+      } */
+
+      .deets6, .deets8 {
+         padding-top: 5px;
+      }
+
+      .deets7 {
+         padding-top: 35px;
+      }
+
+      .card1-11, .card1-13 {
+         width: 100%;
+         height: 55%;
+      }
+
+      .card1-12 {
+         width: 100%;
+         height: 35%;
+      }
+
+      .card1-14 { 
+         width: 100%;
+         height: 53%;
+      }
+
+      .logo0 {
+         width: 100%;
+      }
+
+      .logo0, .logo1, .logo3 {
+         display: flex;
+      }
+
+      .logo1 {
+         width: 65%;
+      }
+
+      .logo2 {
+         width: 60%;
+      }
+
+      .logo3 {
+         width: 55%;
+      }
+
+      .logo4 {
+         display: flex;
+         width: 100%;
+         margin-top: 13px;
+         /* position: relative;
+         top: 15px; */
+      }
+
+      .logo-img {
+         width: 40px;
+      }
+
+      .logo-img1 {
+         margin-right: 5px;
+      }
+
+      .logo-img2 {
+         /* width: 40px; */
+         margin-right: 5px;
+      }
+
+      .logo-sajenwa {
+         width: 55px;
+         height: 25px;
+         position: relative;
+         top: 8px;
+         margin-right: 5px;
+      }
+
+      .logo-iam, .logo-medizee {
+         width: 50px;
+         height: 30px;
+         margin-right: 5px;
+      }
+
+      .logo-human360 {
+         width: 50px;
+         height: 30px;
+         margin-right: 5px;
+      }
+
+      .logo-deet {
+         margin-top: 30px;
+      }
+
+      .logo-iam, .logo-medizee, .logo-dr, .logo-helpdesk {
+         position: relative;
+         top: 7px;
+      }
+
+      /* .title-medizee {
+         margin-top: 15px;
+      } */
+
+      .logo-empidea {
+         width: 40px;
+         height: 40px;
+         margin-right: 5px;
+      }
+
+      .logo-dr {
+         margin-right: 5px;
+         width: 30px;
+         height: 30px;
+         /* position: relative;
+         top: 7px; */
+      }
+
+      .logo-helpdesk {
+         width: 30px;
+         height: 30px;
+      }
+
+      /* .card1-1 {
+         width: 100%;
+      } */
+
+   </style>
+
+</head>
+<body>
+   <div class="wrapper">
+      <nav>
+         <div class="logo">
+            <div class="reliance">
+               <img src="/images/reliance-logo.png" alt="reliance-logo">
+            </div>
+            <div class="microsoft">
+               <img src="/images/microsoft-logo.png" alt="microsoft-logo">
+            </div>
+         </div>
+
+         <div class="btns">
+            <a href="https://relianceinfo-my.sharepoint.com/:b:/g/personal/ayo_relianceinfosystems_com/EZ_19T5N11RDqlODPVYvfLABCyhUAGP659A9apCn7SkJDw?isSPOFile=1&OR=Teams-HL&CT=1675198805573&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAxMDEwMDkxMyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blankx" class="btn btn-visit">Visit our Brochure</a>
+            <a href="mailto:be@relianceinfosystems.com, nkechika@relianceinfosystems.com, olamide@relianceinfosystems.com" class="btn btn-demo">Request a Demo</a>
+         </div>
+      </nav>
+
+      <section>
+         <h2 class="section-title">Our Power Platform Solutions</h2>
+
+         <div class="grid-wrapper">
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/assentory-device.png" alt="assentory">
+               </div>
+
+               <div class="card-details deets1">
+                  <div class="logo0">
+                     <img src="/images/assentory.png" alt="assentory-logo" class="logo-img">
+                     <h3 class="title">Assentory</h3>
+                  </div>
+                  <p class="subtitle">An asset management application that manages useful lifecycle of equipment and devices across the organization.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/dr-img.png" alt="digital-receptionist">
+               </div>
+               
+               <div class="card-details deets1">
+                  <div class="logo0">
+                     <img src="/images/digital-receptionist.png" alt="dr-logo" class="logo-dr">
+                     <h3 class="title">Digital Receptionist</h3>
+                  </div>
+                  <p class="subtitle">A revolutionary application that digitizes and automates visitors’ bookings and their check-in/check-out activities</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/help-deskimg.png" alt="helpdesk-img">
+               </div>
+
+               <div class="card-details deets3">
+                  <div class="logo1">
+                     <img src="/images/helpdesk.png" alt="helpdesk-logo" class="logo-img logo-img2 logo-helpdesk">
+                     <h3 class="title">Help Desk</h3>
+                  </div>
+                  <p class="subtitle">An application that tracks all employees' complaints across multiple channels in one place.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-14">
+                  <img src="/images/human-360img.png" alt="human-360img">
+               </div>
+               
+               <div class="card-details deets4">
+                  <div class="logo0">
+                     <img src="/images/human-360.png" alt="human360-logo" class="logo-human360">
+                     <h3 class="title">Human 360</h3>
+                  </div>
+                  <p class="subtitle">A lightweight application that smartly self-serve employees with Human Resources needs.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-14">
+                  <img src="/images/IAM-img.png" alt="iam-img">
+               </div>
+               
+               <div class="card-details deets5">
+                  <div class="logo0">
+                     <img src="/images/iam.png" alt="iam-logo" class="logo-iam">
+                     <h3 class="title">Information Asset Management</h3>
+                  </div>
+                  <p class="subtitle">A complete solution that provides an organization with information to all organizational-given devices.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-14">
+                  <img src="/images/medizee-img.png" alt="medizee-img">
+               </div>
+               
+               <div class="card-details deets6">
+                  <div class="logo4">
+                     <img src="/images/medizee.png" alt="medizee-logo" class="logo-medizee">
+                     <h3 class="title title-medizee">Medizee</h3>
+                  </div>
+                  <p class="subtitle">A dynamic clinical application where all medical activities are automated between the doctors, therapists, assistants and their patients.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-13">
+                  <img src="/images/sajenwa-img.png" alt="sajenwa-img">
+               </div>
+               
+               <div class="card-details deets7">
+                  <div class="logo3">
+                     <img src="/images/sajenwa-logo.png" alt="sajenwa-logo" class="logo-img logo-sajenwa">
+                     <h3 class="title">Sajenwa</h3>
+                  </div>
+                  <p class="subtitle">A powerful application that allows retail managers to maintain absolute control of all inventory and sales.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-13">
+                  <img src="/images/weber-img.png" alt="weber" class="card1">
+
+               </div>
+
+               <div class="card-details deets8">
+                  <div class="logo0 logo-deet">
+                     <img src="/images/weber.png" alt="weber-logo" class="logo-img logo-img1">
+                     <h3 class="title">Weber</h3>
+                  </div>
+                  <p class="subtitle">A simple tool for scheduling, joining and capturing movements of pool vehicles.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <h2 class="section-title">Our Microsoft Teams Solutions</h2>
+
+         <div class="grid-wrapper">
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/cashadvance.png" alt="cashadvance-img">
+               </div>
+
+               <div class="card-details deets1">
+                  <div class="logo1">
+                     <img src="/images/cash-advance.png" alt="cashadvance-logo" class="logo-img logo-img2">
+                     <h3 class="title">Cash Advance</h3>
+                  </div>
+                  <p class="subtitle">The Cash Advance application is responsible for ensuring that all expenditures from a cash advance are documented appropriately.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <!-- <div class="card">
+               <div class="card-img">
+                  <img src="/images/company-communicator.png" alt="cc-logo" class="card2">
+               </div>
+
+               <div class="card-details deets2">
+                  <h3 class="title">Company Communicator</h3>
+                  <p class="subtitle">The Company Communicator provides an easy interface for designated users to create, preview, collaborate and send messages.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div> -->
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/employee-ideaimg.png" alt="employee-ideaimg">
+               </div>
+               
+               <div class="card-details deets3">
+                  <div class="logo0">
+                     <img src="/images/employee-ideas.png" alt="employeeidea-logo" class="logo-empidea">
+                     <h3 class="title">Employee Idea</h3>
+                  </div>
+                  <p class="subtitle">This application reviews employees’ idea campaigns and manage the list of campaigns and ideas.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img card1-11">
+                  <img src="/images/incentive-img.png" alt="incentive-img">
+               </div>
+               
+               <div class="card-details deets1">
+                  <div class="logo1">
+                     <img src="/images/incentive.png" alt="incentive-logo" class="logo-img logo-img2">
+                     <h3 class="title">Incentive</h3>
+                  </div>
+                  <p class="subtitle">Designed to incentivize and track participation in training and other adoption and change management initiatives.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <h2 class="section-title">Our SharePoint Solutions</h2>
+
+         <div class="grid-wrapper">
+            <div class="card">
+               <div class="card-img card1-12">
+                  <img src="/images/digital-workspacee.png" alt="dw-logo" class="card1">
+               </div>
+
+               <div class="card-details deets1">
+                  <div class="logo1">
+                     <img src="/images/digitat-workspace.png" alt="digital-workspace-logo" class="logo-img logo-img1">
+                     <h3 class="title">Digital Workspace</h3>
+                  </div>
+                  <p class="subtitle">Built on the foundation of Microsoft SharePoint Online, Digital Workspace is a modern productivity platform where all business tools are converged for centralized access and simplified experience.</p>
+                  <a href="#">view more...</a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+</body>
+</html>
